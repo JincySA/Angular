@@ -1,0 +1,29 @@
+
+
+<!-- <div *ngif="message" class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Success!</strong> registerform.
+  <button (click)="removeMessage()" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+</div> -->
+<div class="container">
+  <div class="form-container">
+    <h1>Register</h1>
+    <hr>
+    <form #userPost="ngForm" (ngSubmit)="addregister(userPost.value)">
+      <label for="name"><b>Name</b></label>
+      <input type="text" placeholder="Enter Your name" name="name" id="name" [(ngModel)]="name">
+      <label for="email"><b>Email</b></label>
+      <input type="email" placeholder="Enter email" name="email" id="email" [(ngModel)]="email">
+
+      <div>
+        <small *ngIf="userPost.invalid &&userPost.touched">Some of the required feilds does not have valid value</small>
+      </div>
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" id="password" [(ngModel)]="password">
+      <label for="confirmpassword"><b>confirmpassword</b></label>
+      <input type="confirmpassword" placeholder="confirmpassword " name="confirmpassword" id="confirmpassword" [(ngModel)]="password">
+      <button routerLink="onsubmit()" class="login-btn">Register</button>
+     
+    </form>
+    
+  </div>
+</div>

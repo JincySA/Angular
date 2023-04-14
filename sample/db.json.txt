@@ -1,0 +1,7 @@
+{
+    "register": [
+      { "id": 1, "name": "student1", "email": "student123@gmail.com" },
+      { "id": 1, "name": "student1", "email": "student123@gmail.com" },
+      { "id": 1, "name": "student1", "email": "student123@gmail.com" }
+    ]
+  }
